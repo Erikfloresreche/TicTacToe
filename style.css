@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: rgb(40, 41, 75);
+  }
+
+#TitleApp{
+    color: rgb(85, 212, 6);
+}
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .board {
+    color: rgb(85, 212, 6);
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+  }
+  
+  .cell {
+    border-radius: 10%;
+    background: #60145f;
+    border: 1px solid rgb(85, 212, 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background: #53013f;
+
+  }
+  .cell:active {
+    background: #310225;
+  }
+  
+  #status {
+    font-weight: 800;
+    color: rgb(85, 212, 6) ;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #reset {
+    background: #60145f;
+    border-radius: 10%;
+    color:  rgb(85, 212, 6) ;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  #reset:hover {
+    background: #53013f;
+ 
+  }
+
+  #reset:active {
+    background: #310225;
+  }
